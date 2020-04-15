@@ -1,0 +1,21 @@
+# Define your initial saving amount
+saving_amount  = 100000
+
+# Define the saving rate of your bank
+saving_rate = 0.04
+
+# Assign an initial value 0 for the following loop
+year = 0
+
+# Assign a default True value for the following loop
+flag = True
+
+while flag:
+# Start a loop before a False value is associated to flag
+    if year < 3:
+        saving_amount = saving_amount*(1+saving_rate)
+        year += 1
+        flag = True
+    else:
+        print(f"You have {saving_amount} in your account.")
+        flag = False
